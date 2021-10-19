@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #05142b;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    margin-right: 15em;
+    float:right;    
+    height: 5vh;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin: 1em;
+    list-style: none;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s color;
+}
+
+nav a:hover{
+    color: #E31C68;
+}
+
+#showcase{
+    position: relative;
+    height: 85vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: aliceblue 1px solid; */
+}
+
+#showcase-char{
+    height: 50%;
+    width: 100%;
+}
+
+/* Text animation */
+.container{
+    width: 20vw;
+    height: 22vh;
+    margin: auto;
+    /* border: rgb(255, 0, 106) 1px solid; */
+    overflow: hidden;
+    position: relative;
+}
+
+.infi-txt{
+    position: absolute;
+    top: 13%;
+    left: 43%;
+}
+
+.full-line{
+    display: flex;
+    position: absolute;
+    height: 0.2em;
+    width: 70%;
+    margin:0;
+    /* background-color: rgb(0, 102, 26); */
+    opacity: 1;
+}
+
+.line{
+    height: 100%;
+    margin-right: 0.2em;
+    background-color: rgb(0, 102, 26);
+    opacity: 0.5;
+}
+
+/* language images */
+#python-image{
+    position: absolute;
+    width: 70px;
+    top: 40%;
+    left: 25%;
+}
+
+#html-image{
+    position: absolute;
+    width: 80px;
+    top: 5%;
+    left: 40%;
+}
+
+#css-image{
+    position: absolute;
+    width: 85px;
+    top: 12%;
+    left: 28%;
+    
+}
+
+#js-image{
+    position: absolute;
+    width: 70px;
+    top: 25%;
+    left: 35%;
+}
+
+#c-image{
+    position: absolute;
+    width: 65px;
+    top: 0%;
+    left: 48%;
+}
+
+#data-image{
+    position: absolute;
+    width: 60px;
+    top: 7%;
+    right: 40%;
+}
+
+#django-image{
+    position: absolute;
+    width: 50px;
+    top: 13%;
+    right: 28%;
+}
+
+#node-image{
+    position: absolute;
+    width: 65px;
+    top: 25%;
+    right: 35%;
+}
+
+#react-image{
+    position: absolute;
+    width: 70px;
+    top: 40%;
+    right: 25%;
+}
+
+.slope-right{
+    width: 100vw;
+    max-width:100%;
+    height: 3px;
+    background: #000;
+    transform: rotate(-3deg);
+    margin-bottom: 5em;
+}
+
+#intro{
+    height: 130vh;
+    background: #2d2d2d;
+    clip-path: polygon(100% 0, 100% 100%, 0% 90%, 0 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro div{
+    display: flex;
+}
+
+.heading-spacing{
+    letter-spacing: 1.2em;
+}
+
+
+#intro p{
+    margin-top: 5em;
+    width: 40em;
+    letter-spacing: 0.1em;
+    text-align:justify;
+}
+
+#projects{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects-rows{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#projects-rows div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circles::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    transition:1.2s;
+}
+
+.circles:hover::before{
+    border: #000 10em solid;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+.circles{
+    position: relative;
+    height: 25em;
+    width: 25em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: 8em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    transition: 3s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.circles img{
+    height: 100%;
+    width: 100%;
+    object-fit:none;
+}
+
+.circles p{
+    position: absolute;
+    opacity: 0;
+    width: 15em;
+    transition: 1.2s;
+}
+
+.circles:hover .circle-text{
+    opacity: 1;
+} 
+
+.circles button{
+    position: absolute;
+    top: 70%;
+    border: #fff 1px solid;
+    background: none;
+    padding: 1em;
+    color: #fff;
+    opacity: 0;
+    transition: 1.2s;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.circles button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.circles:hover .read-more{
+    opacity: 1;
+} 
