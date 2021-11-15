@@ -33,7 +33,7 @@ function addImages(where, imgPath, cls){
             const img = document.createElement('img');
             img.src = imgPath;
             img.className = cls;
-            img.style.opacity = '0.4';
+            img.style.opacity = '0.2';
             container.append(img);
         }
     }
