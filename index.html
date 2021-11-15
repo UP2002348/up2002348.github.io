@@ -3,13 +3,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="back.css">
-    
 
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
     <title>Mehmet Mazi</title>
+    
 </head>
 <body>
-
     
     <nav>
         <ul>
@@ -21,16 +22,18 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+
     <section id="showcase">
-        <img id="python-image" src="index/python.png" alt="python">
-        <img id="html-image" src="index/5.svg" alt="python">
-        <img id="css-image" src="index/4.svg" alt="python">
-        <img id="js-image" src="index/2.svg" alt="python">
-        <img id="c-image" src="index/c-program.svg" alt="python">
-        <img id="data-image" src="index/data-management.svg" alt="python">
-        <img id="django-image" src="index/django.svg" alt="python">
-        <img id="node-image" src="index/node-js.svg" alt="python">
-        <img id="react-image" src="index/react-js.svg" alt="python">
+        <img class="path" id="python-image" src="index/python.png" alt="python">
+        <img class="path" id="html-image" src="index/5.svg" alt="python">
+        <img class="path" id="css-image" src="index/4.svg" alt="python">
+        <img class="path" id="js-image" src="index/2.svg" alt="python">
+        <img class="path" id="c-image" src="index/c-program.svg" alt="python">
+        <img class="path" id="data-image" src="index/data-management.svg" alt="python">
+        <img class="path" id="django-image" src="index/django.svg" alt="python">
+        <img class="path" id="node-image" src="index/node-js.svg" alt="python">
+        <img class="path" id="react-image" src="index/react-js.svg" alt="python">
+        
         <div class="infi-txt">
             <div class="container">
                 
@@ -39,10 +42,14 @@
         <img src="index/1.svg" alt="character typing on pc" id="showcase-char">
     </section>
 
-    <!-- <div class="slope-right"></div> -->
+    <div class="slope-right"></div>
 
+    <!-- back to top button -->
+    <button id="back"><img src="index/13.svg" alt="character">Back &#8593;</button>
+
+    
     <section id="intro">
-        <h1 class="heading-spacing">Introduction</h1>
+        <h1 class="letters-spacing">INTRODUCTION</h1>
             <p>I first started programming when I was 12 by learning web development
                 with HTML/CSS. Without going into too much depth with web
                 development, I met the programming language ‘Python’ at school. Also,
@@ -56,9 +63,35 @@
                 learning javascript(for both front-end and back-end with node.js)</p>
     </section>
 
+    <div class="slope-right"></div>
+
+    <section id="skills" class="center-elements">
+        <h1 class="letters-spacing">SKILLS</h1>
+        <div id="skills-specific">
+            <div class="center-elements">
+                <P class="letters-spacing">JAVASCRIPT:</P>
+                <div class="skills-img-container" data-stat="8"></div>
+            </div>
+            <div class="center-elements">
+                <p class="letters-spacing">C-Language:</p>
+                <div class="skills-img-container" data-stat="6"></div>
+            </div>
+            <div class="center-elements">
+                <p class="letters-spacing">HTML/CSS:</p>
+                <div class="skills-img-container" data-stat="8"></div>
+            </div>
+            <div class="center-elements">
+                <p class="letters-spacing">PYTHON:</p>
+                <div class="skills-img-container" data-stat="9"></div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="page-cut"></div>
+
     <section id="projects">
 
-        <h1 class="heading-spacing">Projects</h1>
+        <h1 class="letters-spacing">PROJECTS</h1>
         <div id="projects-rows">
             <div>
                 <div class="circles">
@@ -87,7 +120,67 @@
         </div>
     </section>
 
-    <section id="Experience">
+    <section id="experience" class="center-elements">
+        <h1 class="letters-spacing">EXPERIENCE</h1>
+
+        <div class="center-elements">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="index/freelancer.png" alt="freelanccer">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Freelancer</h1>
+                    <h2>Python and Matlab</h2>
+                    <p>lorem some text more askdnjoaskd joas doakdjoasdoasidjaidoias jdi osad adioasd so</p>
+                    <a href="#">Some link</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="index/brightnetwork.png" alt="brightnetwork">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Bright Network</h1>
+                    <h2>Software Engineer Intern</h2>
+                    <p>lorem some text more askdnjoaskd joas doakdjoasdoasidjaidoias jdi osad adioasd so</p>
+                    <a href="#">Some link</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="index/harrispurley.jpg" alt="harrispurley">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Harris Academy Purley</h1>
+                    <h2>Maths tutor</h2>
+                    <p>lorem some text more askdnjoaskd joas doakdjoasdoasidjaidoias jdi osad adioasd so</p>
+                    <a href="#">Some link</a>
+                </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="index/homeoffice.png" alt="Avatar">
+                </div>
+                <div class="flip-card-back">
+                    <h1>Home office</h1>
+                    <h2>Data Input Assistant</h2>
+                    <p>lorem some text more askdnjoaskd joas doakdjoasdoasidjaidoias jdi osad adioasd so</p>
+                    <a href="#">Some link</a>
+                </div>
+                </div>
+            </div>
+        </div>
+        
 
     </section>
 
@@ -95,14 +188,29 @@
 
     </section>
 
-    <section id="Contact">
+    <section id="Contact" class="center-elements">
+        <h1 class="letters-spacing">CONTACT</h1>
+        <form action="post">
+            <div class="details">
+                <label for="name">NAME</label>
+                <input type="text" id="name" placeholder="John Doe">
+            </div>
+            <div class="details">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="john-doe@emial.com">
+            </div>
+            <div id="message-container">
+                <label for="message">MESSAGE</label>
+                <textarea name="message" id="message" placeholder="message" rows="1"></textarea>
+            </div>
 
+            <input type="submit" value="Submit" disabled>
+        </form>
     </section>
 
-
-    <script src="app.js">
-
-    </script> 
+    <footer>
+        <p>© 2021 Mehmet Mazi</p>
+    </footer>
     
 
 </body>

@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.letters-spacing{
+    letter-spacing: 1.2em;
+}
+
+
+.page-cut{
+    width: 100vw;
+    height: 3px;
+    background-color: #000;
+    transform: rotate(-3deg);
+}
+.center-elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: #2d2d2d;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    margin-right: 15em;
+    float:right;    
+    height: 5vh;
+    margin-top: 1em;
+    margin-bottom: 5em;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    margin: 1em;
+    list-style: none;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s color;
+}
+
+nav a:hover{
+    color: #E31C68;
+}
+
+#showcase{
+    position: relative;
+    height: 85vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: aliceblue 1px solid; */
+}
+
+#showcase-char{
+    height: 50%;
+    width: 100%;
+}
+
+.path{
+    position: absolute;
+    top: 8em;
+    /* background: green; */
+    height: 4.5em;
+    width: 4.5em;
+    animation-name: orbit;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
+}
+
+/* Orbit animation */
+#python-image{
+    animation-delay: -2s;
+}
+
+#html-image{
+    animation-delay: -4s;
+    height: 6em;
+    width: 6em;
+}
+
+#css-image{
+    animation-delay: -6s;
+    height: 6em;
+    width: 6em;
+}
+
+#js-image{
+    animation-delay: -8s;
+    height: 4em;
+    width: 4em;
+}
+
+#c-image{
+    animation-delay: -10s;
+}
+
+#data-image{
+    animation-delay: -12s;
+}
+
+#django-image{
+    animation-delay: -14s;
+    height: 4em;
+    width: 4em;
+}
+
+#node-image{
+    animation-delay: -16s;
+}
+
+#react-image{
+    animation-delay: -18s;
+}
+
+
+@keyframes orbit {
+    0%{
+        z-index: 10;
+    }
+
+    25%{
+        transform: perspective(50px) translate3d(400px, -100px, -10px);
+        z-index: -1;
+    }
+
+    50%{
+        transform: perspective(50px) translate3d(0, -250px, -30px);
+    }
+
+    75%{
+        transform: perspective(50px) translate3d(-400px, -100px, -10px);
+    }
+}
+
+/* Text animation */
+.container{
+    width: 20vw;
+    height: 22vh;
+    margin: auto;
+    /* border: rgb(255, 0, 106) 1px solid; */
+    overflow: hidden;
+    position: relative;
+}
+
+.infi-txt{
+    position: absolute;
+    top: 13%;
+    left: 43%;
+}
+
+.full-line{
+    display: flex;
+    position: absolute;
+    height: 0.2em;
+    width: 70%;
+    margin:0;
+    /* background-color: rgb(0, 102, 26); */
+    opacity: 1;
+}
+
+.line{
+    height: 100%;
+    margin-right: 0.2em;
+    background-color: rgb(0, 102, 26);
+    opacity: 0.5;
+}
+
+/* page slopes */
+.slope-right{
+    width: 100vw;
+    max-width:100%;
+    height: 3px;
+    background: #000;
+    transform: rotate(-3deg);
+    margin-bottom: 5em;
+}
+
+
+/* back button */
+#back{
+    width: 6em;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0.7;
+}
+
+#back:hover{
+    opacity: 1;
+}
+
+#back img{
+    margin-bottom: 1em;
+}
+
+
+/* introduction */
+#intro{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro div{
+    display: flex;
+}
+
+#intro p{
+    margin-top: 5em;
+    width: 40em;
+    letter-spacing: 0.1em;
+    text-align:justify;
+}
+
+
+/* Skills */
+#skills{
+    height: 100vh;
+    flex-direction: column;
+    
+}
+
+#skills-specific{
+    margin-top: 5em;
+}
+
+#skills-specific p{
+    width: 22vw;
+    /* border: red 1px solid; */
+    text-align: end;
+}
+
+.skills-img-container{
+    display: flex;
+    margin-left: 1em;
+}
+
+.skills-imgs{
+    width: 4em;
+    margin-right: 1.5em;
+}
+
+/* Projects */
+#projects{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects-rows{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#projects-rows div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circles::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+    transition:1.2s;
+}
+
+.circles:hover::before{
+    border: #000 10em solid;
+    border-radius: 100%;
+    opacity: 0.7;
+}
+
+.circles{
+    position: relative;
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-top: 8em;
+    margin-bottom: 2em;
+    overflow: hidden;
+    transition: 3s opacity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.circles img{
+    height: 100%;
+    width: 100%;
+    object-fit:none;
+}
+
+.circles p{
+    position: absolute;
+    opacity: 0;
+    width: 13em;
+    transition: 1.2s;
+}
+
+.circles:hover .circle-text{
+    opacity: 1;
+} 
+
+.circles button{
+    position: absolute;
+    top:75%;
+    border: #fff 1px solid;
+    background: none;
+    padding: 1em;
+    color: #fff;
+    opacity: 0;
+    transition: 1.2s;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.circles button:hover{
+    background: #fff;
+    color: #000;
+}
+
+.circles:hover .read-more{
+    opacity: 1;
+} 
+
+
+
+#experience{
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+#experience > div{
+    width: 50em;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+
+
+#experience img{
+    width: 23em;
+    height: 16em;
+    
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 23em;
+    height: 16em;
+    margin: 1em;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+background-color: #bbb;
+color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+background-color: white;
+color: black;
+transform: rotateY(180deg);
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+
+.flip-card-back h1{
+    margin-top: 0.3em;
+}
+
+.flip-card-back h2{
+    margin-top: 0.3em;
+    font-size: 1.2em;
+}
+
+.flip-card-back p{
+
+}
+
+.flip-card-back a{
+    color: #E31C68;
+    text-decoration: none;
+    transition: 250ms ease-in;
+}
+
+.flip-card-back a:hover{
+    border-bottom: 0.3em solid #E31C68;
+}
+
+/* contact */
+
+#contact{
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#contact form{
+    
+    display: flex;
+    width: 40em;
+    flex-wrap: wrap;
+}
+
+#contact form div{
+    margin: 1em;
+}
+
+#contact form label{
+    display: block;
+}
+
+#contact .details{
+    width: 18em;
+}
+
+#contact form div input{
+    margin-top: 1em;
+    padding: 0.5em;
+    height: 2.5em;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1em solid #ccc;
+    color: white;
+    outline: none;
+}
+
+#contact form input:active{
+    border-bottom:0.2em solid #fff;
+}
+
+#contact #message-container{
+    width: 100%;
+
+}
+
+#contact #message{
+    margin-top: 1em;
+    background: none;
+    border:none;
+    outline: none;
+    padding: 0.5em;
+    height: 2.5em;
+    width: 100%;
+    color: #fff;
+    border-bottom: #ccc 0.2em solid;
+}
+
+#contact form input[type=submit]{
+    margin: 1.5em;
+    width: 6em;
+    height: 2.5em;
+    font-size: 1.2em;
+    background: none;
+    color: #fff;
+    border: #fff 0.07em solid;
+    border-radius: 0.7em;
+    cursor: pointer;
+    transition: 350ms;
+}
+
+#contact form input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 5em;
+}
+
+footer p{
+    position: absolute;
+    left: 5em;
+}
